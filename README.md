@@ -64,6 +64,31 @@ We use the [JSONPlaceholder API](https://jsonplaceholder.typicode.com), a free f
 - **TypeScript:** Convert the project to TypeScript for static typing and better code quality.
 
 ---
+## 5. Example Project Structure
+/src
+|-- /api
+| |-- userService.js # Functions for API calls (getUsers, createUser, etc.)
+|-- /components
+| |-- /common
+| | |-- Spinner.jsx
+| | |-- ErrorMessage.jsx
+| |-- /users
+| | |-- UserList.jsx
+| | |-- UserItem.jsx
+| | |-- UserForm.jsx
+|-- /pages
+| |-- HomePage.jsx # Displays the main user list
+| |-- AddUserPage.jsx # Form for creating a user
+| |-- EditUserPage.jsx # Form for editing a user
+|-- /hooks
+| |-- useUsers.js # Optional custom hook for managing state & API calls
+|-- App.jsx # Main component with react-router setup
+|-- index.js # Entry point
+|-- index.css # Global styles
+
+yaml
+Copy code
+
 
 
 ## 6. Getting Started & Tooling
